@@ -1,0 +1,11 @@
+:root {
+  --blue-text: #2196f3;
+  --logo-text: #000000;
+  --title-text: #212121;
+  --gray-text: #757575;
+  --text-white: #ffffff;
+  --fon-color: #2f303a;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --btn-color: #f5f4fa;
+  --size-div: 30px;
+}

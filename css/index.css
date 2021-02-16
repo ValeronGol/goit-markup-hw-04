@@ -1,0 +1,133 @@
+/* Стили для героя */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--fon-color);
+  color: var(--text-white);
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0px auto 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-link {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  background-color: var(--blue-text);
+  color: var(--text-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* Стили для особенностей */
+.priority {
+  padding: 94px 0 0;
+}
+
+.priority-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.priority-par {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}
+
+/* создание сетки для команды работ и особенностей */
+.priority-list,
+.deal-list,
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--size-div));
+  margin-left: calc(-1 * var(--size-div));
+}
+
+.team-list > .item,
+.priority-list > .item {
+  flex-basis: calc(100% / 4 - var(--size-div));
+  background-color: var(--text-white);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.priority-list > .item,
+.deal-list > .item,
+.team-list > .item {
+  flex-basis: calc(100% / 3 - var(--size-div)));
+  margin-top: var(--size-div);
+  margin-left: var(--size-div);
+}
+
+/* Стили для детельности */
+.deal{
+  padding: 94px 0;
+}
+
+.deal-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Стили для команды*/
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team {
+  padding: 94px 0px;
+  background-color: var(--btn-color);
+  text-align: center;
+}
+
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.team-title-li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-par {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}

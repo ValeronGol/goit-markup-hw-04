@@ -1,0 +1,66 @@
+/* Стили для портфолио */
+.section-portfolio {
+  padding: 94px 0;
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-nav > .item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.portfolio-btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--btn-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus,
+.current-btn {
+  background-color: var(--blue-text);
+  color: var(--text-white);
+}
+
+.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--size-div));
+  margin-top: calc(-1 * var(--size-div));
+}
+
+.portfolio-card > .item {
+  flex-basis: calc(100% / 3 - var(--size-div));
+  margin-left: var(--size-div);
+  margin-top: var(--size-div);
+}
+
+.portfolio-title {
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  padding: 20px 24px 20px 24px;
+  border-left: 1px #eeeeee solid;
+  border-right: 1px #eeeeee solid;
+  border-bottom: 1px #eeeeee solid;
+}
+
+.portfolio-par {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}

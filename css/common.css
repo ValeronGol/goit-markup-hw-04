@@ -1,0 +1,142 @@
+/* ОБЩИЕ СТИЛИ ДЛЯ ВСЕГО ДОКУМЕНТА */
+
+/* применяем основное семейство шрифтов и цвет для всего документа и ссылок */
+body,
+a,
+button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--title-text);
+}
+
+/* Контейнер для центрирования */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* стили для header */
+
+.header {
+  border-bottom: 1px #ececec solid;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-text);
+}
+
+.logo {
+  color: var(--blue-text);
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list .link,
+.contact-list {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.current {
+  color: var(--blue-text);
+  font-weight: 500;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--blue-text);
+}
+
+.nav-list > .item:not(:first-child),
+.contact-list > .item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contact-list {
+  display: flex;
+}
+
+.link-mail {
+  color: var(--gray-text);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link-mail:hover,
+.link-mail:focus {
+  color: var(--blue-text);
+}
+
+/* стили для footer*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background: var(--fon-color);
+  color: var(--text-white);
+}
+
+.footer .item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.footer-text {
+  color: var(--footer-text);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--text-white);
+}
