@@ -132,14 +132,17 @@ button {
 }
 
 /* стили для footer*/
-.footer {
+.footer{
   margin: 0 auto;  
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--fon-color);
+}
+
+.address {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background: var(--fon-color);
   color: var(--text-white);
 }
 
@@ -280,7 +283,8 @@ button {
 /* создание сетки для команды работ и особенностей */
 .priority-list,
 .deal-list,
-.team-list {
+.team-list, 
+.clients-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--size-div));
@@ -296,7 +300,8 @@ button {
 
 .priority-list > .item,
 .deal-list > .item,
-.team-list > .item {
+.team-list > .item,
+.clients-list > .item  {
   flex-basis: calc(100% / 3 - var(--size-div)));
   margin-top: var(--size-div);
   margin-left: var(--size-div);
@@ -330,6 +335,11 @@ button {
 
 .team-content {
   padding: 30px 32px 30px 32px;
+}
+
+.team-foto{
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .team-title {
@@ -380,6 +390,26 @@ button {
 .team-social-list .icon {
   height: 20px;
   width: 20px;
+}
+
+/* стили для постоянных клиентов */
+.clients-list > .item {
+  flex-basis: calc(100% / 6 - var(--size-div));
+}
+
+.clients-list .link {
+  display: flex;
+  padding-top: 20px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  min-height: 90px;
+  justify-content: center;
+  color: var(--icon-color);
+}
+
+.clients-list .link:hover, .clients-list .link:focus{
+  color: var(--blue-text);
+  border-color: var(--blue-text);
 }
 
 /* Стили для портфолио */
