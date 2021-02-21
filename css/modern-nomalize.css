@@ -9,6 +9,7 @@
 }
 
 ul {
+  font-style: normal;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,22 +21,7 @@ img {
   height: auto;
 }
 
-/* обнуляем дефолтные подчеркивания у всех ссылок */
-a {
-  text-decoration: none;
-}
-
-code,
-kbd,
-samp,
-pre {
-  font-family: 'Open Sans', sans-serif;
-
-  /* font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -76,20 +62,8 @@ Sections
 ========
 */
 
-/**
-Remove the margin in all browsers.
-*/
-
 body {
   margin: 0;
-  padding: 0;
-}
-
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
@@ -136,6 +110,15 @@ strong {
 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 2. Correct the odd 'em' font sizing in all browsers.
 */
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
 
 /**
 Add the correct font size in all browsers.
@@ -195,17 +178,10 @@ input,
 optgroup,
 select,
 textarea {
-  display: inline-block;
-  border: 0;
-  border-radius: 4px;
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
-}
-
-address {
-  font-style: normal;
 }
 
 /**
@@ -214,8 +190,10 @@ Remove the inheritance of text transform in Edge and Firefox.
 */
 
 button,
+a,
 select {
   text-transform: none;
+  text-decoration: none;
 }
 
 /**
@@ -227,6 +205,8 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+  border: 0;
+  border-radius: 4px;
 }
 
 /**
