@@ -8,7 +8,7 @@
   --fon-color: #2f303a;
   --footer-text: rgba(255, 255, 255, 0.6);
   --btn-color: #f5f4fa;
-  --secondary-background-color: #F5F4FA;
+  --icon-color: #AFB1B8;
   --size-div: 30px;
 }
 
@@ -213,14 +213,19 @@ button {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--fon-color);
+  margin: 0px auto;
+  max-width: 1600px;
+  height: 600px;
+  background-color: #C4C4C4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text-white);
   text-align: center;
 }
 
 .hero-title {
   margin: 0px auto 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -232,7 +237,7 @@ button {
   display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
-
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   background-color: var(--blue-text);
   color: var(--text-white);
   font-weight: 700;
@@ -244,6 +249,15 @@ button {
 /* Стили для особенностей */
 .priority {
   padding: 94px 0 0;
+}
+
+.priority-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: var(--size-div);
+  background-color: var(--btn-color);
 }
 
 .priority-title {
@@ -315,8 +329,7 @@ button {
 }
 
 .team-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px 30px 32px;
 }
 
 .team-title {
@@ -335,12 +348,38 @@ button {
 }
 
 .team-par {
+  margin-bottom: 16px;
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--gray-text);
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-social-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.team-social-list .link:hover {
+  color: var(--text-white);
+  background-color: var(--blue-text);
+}
+
+.team-social-list .icon {
+  height: 20px;
+  width: 20px;
 }
 
 /* Стили для портфолио */
